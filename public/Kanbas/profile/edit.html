@@ -1,43 +1,89 @@
-<table width="100%">
-    <tbody>
-    <tr>
-        <td valign="top">
-            <ul>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/public/styles.css" />
+    <link href="/public/vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="/public/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wd-flex-row-container">
+        <div class="wd-bg-color-black">
+            <ul class="wd-kanbas-navigation">
                 <li>
-                    <a href="index.html">Account</a>
+                    <img src="/public/nLogo.png" height="70px" />
+                </li>
+                <li class="wd-active">
+                    <a href="index.html">
+                        <i class="fas fa-user" style="color: black;" aria-hidden=true></i> <br>
+
+                        Account
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a href="/public/Kanbas/dashboard.html">
+                        <i class="fas fa-tachometer-alt" style="color: #ff0000;" aria-hidden=true></i> <br>
+
+                        Dashboard
+                    </a>
                 </li>
                 <li>
-                    <a href="../home.html">Courses</a>
+                    <a href="/public/Kanbas/home.html">
+                        <i class="fa fa-book" style="color: #ff0000;"></i> <br>
+
+                        Courses
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Calendar</a>
+                    <a href="#">
+                        <i class="fas fa-calendar" style="color: #ff0000;" aria-hidden=true></i> <br>
+
+                        Calendar
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Inbox</a>
+                    <a href="#">
+                        <i class="fa fa-envelope-open-text" style="color: #ff0000;"></i> <br>
+
+                        Inbox
+                    </a>
                 </li>
                 <li>
-                    <a href="#">History</a>
+                    <a href="#">
+                        <i class="fa fa-clock" style="color: #ff0000;"></i> <br>
+
+                        History
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Studio</a>
+                    <a href="#">
+                        <i class="fa fa-film" style="color: #ff0000;"></i> <br>
+
+                        Studio
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Commons</a>
+                    <a href="#">
+                        <i class="fa fa-arrow-circle-right" style="color: #ff0000;"></i> <br>
+
+                        Commons
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Help</a>
+                    <a href="#">
+                        <i class="fa fa-question-circle" style="color: #ff0000;"></i> <br>
+
+                        Help
+                    </a>
                 </li>
             </ul>
-        </td>
-        <td valign="top">
-            <ul>
+        </div>
+        <div>
+            <ul class="wd-account-navigation">
                 <li>
                     <a href="#">Notifications</a>
                 </li>
-                <li>
+                <li class="wd-active">
                     <a href="index.html">Profile</a>
                 </li>
                 <li>
@@ -62,73 +108,84 @@
                     <a href="#">Global Announcements</a>
                 </li>
             </ul>
-        </td>
-        <td valign="top">
-            <h2>
-                Max Leroux
-            </h2>
-            Name:*
-            <input type="text" id="text-fields-profile-name"
-                   value="Max Leroux"/>
-            Pronouns:
-            <select id="select-one-pronouns">
-                <option selected value="NONE">None</option>
-            </select> <br/>
-            <br/>
-            Title:
-            <input type="text" id="text-fields-title"
-                   value=""/><br/> <br/>
+            </ul>
+        </div>
+        <div class="wd-flex-grow-1" style="padding-right: 20px; padding-bottom: 15px;">
+            <br>
+            Max Leroux's Profile <br>
+            <hr>
+            <br>
+            <form action="index.html">
+                <button style="float: right;" type="button submit" class="btn btn-outline-secondary">
+                    <i class="fa fa-pencil-alt"></i>
+                    Cancel Profile
+                </button>
+            </form>
+            <i class="fas fa-user" style="color: grey; font-size: 120px;" aria-hidden=true></i>
+            <br>
+            <br>
+            Name:* <br>
+            <div class="col-sm-4">
+                <input class="form-control form-control-sm" type="text" id="text-fields-profile-name"
+                    value="Max Leroux" /> <br>
+            </div>
+            Pronouns: <br>
+            <select class="form-select" style="width: 100px;"">
+                <option>Select</option>
+            </select>
+            <br />
+            Title: <br>
+            <div class="col-sm-4">
+                <input class="form-control form-control-sm" type="text" id="text-fields-title" value="" /><br /> <br />
+            </div>
             <h3>
                 Contact
             </h3>
             <font size="3">
-                No registered services, you can add some on the <a href="#">settings</a> page <br/>
+                No registered services, you can add some on the <a href="#">settings</a> page <br />
             </font>
-            <br/>
+            <br />
             <h3>
                 Biography
-            </h3> <br/>
-            <font size="3">
-                CS and Math Student
-            </font>
-            <br/>
-            <form id="textarea">
-                <textarea cols="30" rows="4">CS and Math Student</textarea>
-            </form>
+            </h3>
+            <div class="col-sm-4">
+                <textarea class="form-control" id="biography" rows="4">CS and Math Student</textarea>
+            </div>
+            <br>
             <h3>
                 Links
             </h3>
-            <li>
-                <a href="#">YouTube</a> <br/>
-            </li>
+            <div class="container text-align: left">
+                <div class="row">
+                    <div class="col-2" align="center">
+                        <h5>Title</h5>
+                    </div>
+                    <div class="col-2" align="center">
+                        <h5>URL</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <input class="form-control" type="text" id="text-fields-link-text" value="YouTube" />
+                    </div>
+                        &rarr;
+                    <div class="col-2">
+                        <input class="form-control" type="text" id="text-fields-link-url" value="https://www.youtube.com" />
+                    </div>
+                </div>
+            </div>
             <br>
-            <table width="40%">
-                <thead valign="middle" style="text-align: center;">
-                <tr>
-                    <th>Title</th>
-                    <th>URL</th>
-                </tr>
-                </thead>
-                </tr>
-            </table>
-            <input type="text" id="text-fields-link-text"
-                   value="YouTube"/>&rarr;
-            <input type="text" id="text-fields-link-url"
-                   value="https://www.youtube.com"/>
-            <a href="#">Remove</a> <br/>
+            <button type="button" class="btn btn-outline-secondary">Add another link</button>
             <br>
-            <button type="button">Add another link</button>
             <br>
-            <button>Cancel</button>
-            <form action="index.html" style="display: inline;">
-                <button>Save Profile</button>
-            </form>
-            <br>
-            <button type="button">Edit Profile</button>
-            <form action="index.html" style="display: inline;">
-                <button>Cancel Editing</button>
-            </form>
-        </td>
-    </tr>
-    </tbody>
-</table>
+            <div class="float-end">
+                <form action="index.html" style="display: inline;">
+                    <button type="button submit" class="btn btn-outline-secondary">Cancel</button>
+                    <button type="button submit" class="btn btn-danger">Save Profile</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

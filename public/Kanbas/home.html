@@ -1,40 +1,92 @@
-<table width="100%">
-    <tbody>
-    <tr>
-        <td valign="top">
-            <ul>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/public/styles.css" />
+    <link href="../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wd-flex-row-container">
+        <div class="wd-bg-color-black">
+            <ul class="wd-kanbas-navigation">
                 <li>
-                    <a href="profile/index.html">Account</a>
+                    <img src="/public/nLogo.png" height="70px" />
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a href="profile/index.html">
+                        <i class="fas fa-user" style="color: #ffffff;" aria-hidden=true></i> <br>
+
+                        Account
+                    </a>
                 </li>
                 <li>
-                    <a href="home.html">Courses</a>
+                    <a href="dashboard.html">
+                        <i class="fas fa-tachometer-alt" style="color: #ff0000;" aria-hidden=true></i> <br>
+
+                        Dashboard
+                    </a>
+                </li>
+                <li class="wd-active">
+                    <a href="home.html">
+                        <i class="fa fa-book" style="color: #ff0000;"></i> <br>
+
+                        Courses
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Calendar</a>
+                    <a href="#">
+                        <i class="fas fa-calendar" style="color: #ff0000;" aria-hidden=true></i> <br>
+
+                        Calendar
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Inbox</a>
+                    <a href="#">
+                        <i class="fa fa-envelope-open-text" style="color: #ff0000;"></i> <br>
+
+                        Inbox
+                    </a>
                 </li>
                 <li>
-                    <a href="#">History</a>
+                    <a href="#">
+                        <i class="fa fa-clock" style="color: #ff0000;"></i> <br>
+
+                        History
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Studio</a>
+                    <a href="#">
+                        <i class="fa fa-film" style="color: #ff0000;"></i> <br>
+
+                        Studio
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Commons</a>
+                    <a href="#">
+                        <i class="fa fa-arrow-circle-right" style="color: #ff0000;"></i> <br>
+
+                        Commons
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Help</a>
+                    <a href="#">
+                        <i class="fa fa-question-circle" style="color: #ff0000;"></i> <br>
+
+                        Help
+                    </a>
                 </li>
             </ul>
-        </td>
-        <td valign="top">
-            <ul>
-                <li>
+        </div>
+        <div>
+            <nav aria-label="breadcrumb" style="padding-left: 15px; margin-top: 10px;">
+                <ol class="breadcrumb ">
+                    <li class="breadcrumb-item active" aria-current="page">CS5610.11744.202310 > Home</li>
+                </ol>
+            </nav>
+            <!-- TODO - WRONG -->
+            <ul class="wd-course-navigation">
+                <li class="wd-active">
                     <a href="home.html">Home</a>
                 </li>
                 <li>
@@ -89,107 +141,271 @@
                     <a href="#">Settings</a>
                 </li>
             </ul>
-        </td>
-        <td valign="top">
-            <button>Collapse All</button>
-            <button>View Progress</button>
-
-            <select>
-                <option>Publish All</option>
-                <option>Publish All modules and items</option>
-                <option>Publish modules only</option>
-                <option>UnPublish All</option>
-            </select>
-
-            <button>+ Module</button>
-
-            <ul>
-                <li>Week 0 - INTRO</li>
-                <ul>
-                    <li>LEARNING OBJECTIVES</li>
-                    <ul>
-                        <li>Introduction to the course</li>
-                        <li>Learn what is Web Development</li>
-                        <li>Creating a development environment</li>
-                        <li>Creating a Web Application</li>
-                        <li>Getting started with the 1st assignment</li>
-                    </ul>
-                    <li>READING</li>
-                    <ul>
-                        <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                        <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
-                    </ul>
-                    <li>SLIDES</li>
-                    <ul>
-                        <li>
-                            <a href="https://docs.google.com/presentation/d/1yb_fQd5MhVuFczb5F5II0CoDkVJALFqxUnuwPAXiOAU/edit?usp=sharing">Introduction to Web Development</a>
+        </div>
+        <div class="wd-flex-grow-1" style="padding-top: 40px; padding-bottom: 40px;">
+            <ul class="list-group">
+                <div style="padding-bottom: 10px;">
+                    <form action="index.html" style="display: inline;">
+                        <button type="button" class="btn btn-outline-secondary">Collapse All</button>
+                        <button type="button" class="btn btn-outline-secondary"><i class="fa fa-check-circle"
+                                aria-hidden="true"></i> View Progress</button>
+                        <select class="form-select" style="display: inline; width: 200px;">
+                            <option>Publish All</option>
+                            <option>Publish All modules and items</option>
+                            <option>Publish modules only</option>
+                            <option>UnPublish All</option>
+                        </select>
+                        <button type="button" class="btn btn-outline-danger">Module</button>
+                    </form>
+                </div>
+                <li class="list-group-item list-group-item-secondary">Week 0 - INTRO
+                    <div class="float-end">
+                        <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                    </div>
+                </li>
+                <ul class="list-group">
+                    <li class="list-group-item">LEARNING OBJECTIVES
+                        <div class="float-end">
+                            <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                        </div>
+                    </li>
+                    <ul class="list-group">
+                        <li class="list-group-item subinfo">Introduction to the course
+                            <div class="float-end">
+                                <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                            </div>
                         </li>
-                        <li>
-                            <a href="https://docs.google.com/presentation/d/16yDwIH8np-tQL85g4bpmrsDfO8LaW38jr-fMQirLnoQ/edit?usp=sharing">Creating an HTTP server with Node.js</a>
+                        <li class="list-group-item subinfo">Learn what is Web Development
+                            <div class="float-end">
+                                <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                            </div>
                         </li>
-                        <li>
-                            <a href="https://docs.google.com/presentation/d/10B3jLiJ8-HMsA6TPq9JuWfJzsvX9SFnYVuhthrQbFwU/edit?usp=sharing">Creating a React Application</a>
+                        <li class="list-group-item subinfo">Creating a development environment
+                            <div class="float-end">
+                                <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item subinfo">Creating a Web Application
+                            <div class="float-end">
+                                <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item subinfo">Getting started with the 1st assignment
+                            <div class="float-end">
+                                <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                            </div>
+                        </li>
+                    </ul>
+                    <li class="list-group-item">READING
+                        <div class="float-end">
+                            <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                        </div>
+                    </li>
+                    <ul class="list-group">
+                        <li class="list-group-item subinfo">Full Stack Developer - Chapter 1 - Introduction
+                            <div class="float-end">
+                                <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item subinfo">Full Stack Developer - Chapter 2 - Creating User Interfaces
+                            With HTML
+                            <div class="float-end">
+                                <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                            </div>
+                        </li>
+                    </ul>
+                    <li class="list-group-item ">SLIDES
+                        <div class="float-end">
+                            <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                        </div>
+                    </li>
+                    <ul class="list-group">
+                        <li class="list-group-item subinfo">
+                            <a href="https://docs.google.com/presentation/d/1yb_fQd5MhVuFczb5F5II0CoDkVJALFqxUnuwPAXiOAU/edit?usp=sharing"
+                            style="color: red; text-decoration: none;">Introduction
+                                to Web Development
+                                <div class="float-end">
+                                    <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item subinfo">
+                            <a
+                                href="https://docs.google.com/presentation/d/16yDwIH8np-tQL85g4bpmrsDfO8LaW38jr-fMQirLnoQ/edit?usp=sharing"
+                                style="color: red; text-decoration: none;">Creating
+                                an HTTP server with Node.js
+                                <div class="float-end">
+                                    <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item subinfo">
+                            <a
+                                href="https://docs.google.com/presentation/d/10B3jLiJ8-HMsA6TPq9JuWfJzsvX9SFnYVuhthrQbFwU/edit?usp=sharing"
+                                style="color: red; text-decoration: none;">Creating
+                                a React Application
+                                <div class="float-end">
+                                    <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </ul>
-                <li>Week 1 - HTML</li>
-                <ul>
-                    <li>LEARNING OBJECTIVES</li>
-                    <ul>
-                        <li>Learn how to create user interfaces with HTML</li>
-                        <li>Keep working on assignment 1</li>
-                        <li>Deploy the assignment to Netlify</li>
+                <li class="list-group-item list-group-item-secondary">Week 1 - HTML
+                    <div class="float-end">
+                        <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                    </div>
+                </li>
+                <ul class="list-group">
+                    <li class="list-group-item">LEARNING OBJECTIVES
+                        <div class="float-end">
+                            <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                        </div>
+                    </li>
+                    <ul class="list-group">
+                        <li class="list-group-item subinfo">Learn how to create user interfaces with HTML
+                            <div class="float-end">
+                                <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item subinfo">Keep working on assignment 1
+                            <div class="float-end">
+                                <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item subinfo">Deploy the assignment to Netlify
+                            <div class="float-end">
+                                <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                            </div>
+                        </li>
                     </ul>
-                    <li>READING</li>
-                    <ul>
-                        <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                        <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
+                    <li class="list-group-item ">READING
+                        <div class="float-end">
+                            <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                        </div>
+                    </li>
+                    <ul class="list-group">
+                        <li class="list-group-item subinfo">Full Stack Developer - Chapter 1 - Introduction
+                            <div class="float-end">
+                                <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item subinfo">Full Stack Developer - Chapter 2 - Creating User Interfaces
+                            With HTML
+                            <div class="float-end">
+                                <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item ">SLIDES
+                            <div class="float-end">
+                                <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                            </div>
+                        </li>
+                        <ul class="list-group">
+                            <li class="list-group-item subinfo">
+                                <a href="https://docs.google.com/presentation/d/1yb_fQd5MhVuFczb5F5II0CoDkVJALFqxUnuwPAXiOAU/edit?usp=sharing"
+                                style="color: red; text-decoration: none;">Introduction
+                                    to Web Development
+                                    <div class="float-end">
+                                        <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item subinfo">
+                                <a
+                                    href="https://docs.google.com/presentation/d/16yDwIH8np-tQL85g4bpmrsDfO8LaW38jr-fMQirLnoQ/edit?usp=sharing"
+                                    style="color: red; text-decoration: none;">Creating
+                                    an HTTP server with Node.js
+                                    <div class="float-end">
+                                        <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item subinfo">
+                                <a
+                                    href="https://docs.google.com/presentation/d/10B3jLiJ8-HMsA6TPq9JuWfJzsvX9SFnYVuhthrQbFwU/edit?usp=sharing"
+                                    style="color: red; text-decoration: none;">Creating
+                                    a React Application
+                                    <div class="float-end">
+                                        <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i>
+                                    </div>
+                                </a>
+                            </li>
                     </ul>
                 </ul>
             </ul>
+        </div>
+        <div style="padding-left: 20px; padding-top: 40px;">
+            <h3>Course Status</h3>
+            <button type="button" class="btn btn-outline-secondary">Unpublish</button>
+            <button type="button" class="btn btn-success"> <i class="fa fa-check-circle" aria-hidden="true"
+                    style="color: white"></i>
+                Publish</button>
+            <br>
+            <br>
 
-        </td>
-        <td valign="top">
-            <h2>Course Status</h2>
-            <button type="button">Unpublish</button>
-            <button type="button">Published</button>
-            <ul>
-                <li>
-                    <a href="#">Import Existing Content</a>
+            <button type="button" class="btn btn-outline-secondary wd-home-status-button">
+                <p style="text-align: left; margin: 0px;">
+                    <i class="fas fa-file-import" aria-hidden="true"></i> Import Existing Content
+                </p>
+            </button> <br>
+            <button type="button" class="btn btn-outline-secondary wd-home-status-button">
+                <p style="text-align: left; margin: 0px;">
+                    <i class="fas fa-file-import" aria-hidden="true"></i> Import From Commons
+                </p>
+            </button> <br>
+            <button type="button" class="btn btn-outline-secondary wd-home-status-button">
+                <p style="text-align: left; margin: 0px;">
+                    <i class="fas fa-bullseye" aria-hidden="true"></i> Choose Home Page
+                </p>
+            </button> <br>
+            <button type="button" class="btn btn-outline-secondary wd-home-status-button">
+                <p style="text-align: left; margin: 0px;">
+                    <i class="fa fa-chart-bar" aria-hidden="true"></i> View Course Stream
+                </p>
+            </button> <br>
+            <button type="button" class="btn btn-outline-secondary wd-home-status-button">
+                <p style="text-align: left; margin: 0px;">
+                    <i class="fa fa-bullhorn" aria-hidden="true"></i> New Announcement
+                </p>
+            </button> <br>
+            <button type="button" class="btn btn-outline-secondary wd-home-status-button">
+                <p style="text-align: left; margin: 0px;">
+                    <i class="fa fa-chart-bar" aria-hidden="true"></i> New Analytics
+                </p>
+            </button> <br>
+            <button type="button" class="btn btn-outline-secondary wd-home-status-button">
+                <p style="text-align: left; margin: 0px;">
+                    <i class="fa fa-bell" aria-hidden="true"></i> View Course Notifications
+                </p>
+            </button>
+            <br>
+            <br>
+            <ul class="list-group" style="padding: 10px;">
+                <li class="list-group-item">
+                    <h5>To Do</h5>
                 </li>
-                <li>
-                    <a href=#">Import From Commons</a>
-                </li>
-                <li>
-                    <a href=#">Choose Home Page</a>
-                </li>
-                <li>
-                    <a href=#">View Course Stream</a>
-                </li>
-                <li>
-                    <a href=#">New Announcement</a>
-                </li>
-                <li>
-                    <a href=#">New Analytics</a>
-                </li>
-                <li>
-                    <a href=#">View Course Notifications</a>
+                <li class="list-group-item">
+                    Grade A1 - ENV + HTML
                 </li>
             </ul>
-            <h2>Coming Up</h2>
-            <a href="#">View Calendar</a>
-            <ul>
-                <li>
-                    <a href=#">Lecture CS4550.12631.202410 Sep 7 at 11:45am</a>
+            <br>
+            <ul class="list-group" style="padding: 10px;">
+                <li class="list-group-item">
+                    <h5>Coming Up</h5>
                 </li>
-                <li>
-                    <a href=#">Lecture CS4550.12631.202410 Sep 11 at 11:45am</a>
+                <li class="list-group-item">
+                    <a href=#" style="color: black; text-decoration: none;">Lecture CS4550.12631.202410 Sep 7 at 11:45am</a>
                 </li>
-                <li>
-                    <a href=#">CS5610 06 SP23 Lecture Sep 11 at 6pm</a>
+                <li class="list-group-item">
+                    <a href=#" style="color: black; text-decoration: none;">Lecture CS4550.12631.202410 Sep 11 at 11:45am</a>
+                </li>
+                <li class="list-group-item">
+                    <a href=#" style="color: black; text-decoration: none;">CS5610 06 SP23 Lecture Sep 11 at 6pm</a>
                 </li>
             </ul>
-        </td>
-    </tr>
-    </tbody>
-</table>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,187 +1,237 @@
-<table width="100%">
-    <tbody>
-    <tr>
-        <td valign="top">
-            <ul>
-                <li>
-                    <a href="profile/index.html">Account</a>
-                </li>
-                <li>
-                    <a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <a href="home.html">Courses</a>
-                </li>
-                <li>
-                    <a href="#">Calendar</a>
-                </li>
-                <li>
-                    <a href="#">Inbox</a>
-                </li>
-                <li>
-                    <a href="#">History</a>
-                </li>
-                <li>
-                    <a href="#">Studio</a>
-                </li>
-                <li>
-                    <a href="#">Commons</a>
-                </li>
-                <li>
-                    <a href="#">Help</a>
-                </li>
-            </ul>
-        </td>
-        <td valign="top">
-            <ul>
-                <li>
-                    <a href="home.html">Home</a>
-                </li>
-                <li>
-                    <a href="#">Modules</a>
-                </li>
-                <li>
-                    <a href="#">Piazza</a>
-                </li>
-                <li>
-                    <a href="#">Zoom Meetings</a>
-                </li>
-                <li>
-                    <a href="assignments/index.html">Assignments</a>
-                </li>
-                <li>
-                    <a href="#">Quizzes</a>
-                </li>
-                <li>
-                    <a href="grades.html">Grades</a>
-                </li>
-                <li>
-                    <a href="#">People</a>
-                </li>
-                <li>
-                    <a href="#">Panopto Video</a>
-                </li>
-                <li>
-                    <a href="#">Discussions</a>
-                </li>
-                <li>
-                    <a href="#">Announcements</a>
-                </li>
-                <li>
-                    <a href="#">Pages</a>
-                </li>
-                <li>
-                    <a href="#">Files</a>
-                </li>
-                <li>
-                    <a href="#">Rubrics</a>
-                </li>
-                <li>
-                    <a href="#">Outcomes</a>
-                </li>
-                <li>
-                    <a href="#">Collaborations</a>
-                </li>
-                <li>
-                    <a href="#">Syllabus</a>
-                </li>
-                <li>
-                    <a href="#">Settings</a>
-                </li>
-            </ul>
-        </td>
+<html>
+    <head>
+        <link rel="stylesheet" href="/public/styles.css" />
+        <link href="../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+        <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="wd-flex-row-container">
+            <div class="wd-bg-color-black">
+                <ul class="wd-kanbas-navigation">
+                    <li>
+                        <img src="/public/nLogo.png" height="70px"/>
+                    </li>
+                    <li>
+                        <a href="profile/index.html">
+                            <i class="fas fa-user" style="color: #ffffff;" aria-hidden=true></i> <br>
 
-        <td valign="top">
-            <select id="select-one-gradebook">
-                <option selected value="GRADEBOOK">Gradebook</option>
-            </select>
-            <button type="button">Import</button>
-            <select id="select-one-export">
-                <option selected value="EXPORT">Export</option>
-            </select>
-            <button type="button">Configure</button>
-            <h3>Student Names</h3>
-            <label for="text-fields-search-students">
-            </label>
-            <input type="text"
-                   placeholder="Search Students"
-                   id="text-fields-search-students"/><br/>
-            <h3>Assignment Names</h3>
-            <label for="text-fields-search-assignments">
-            </label>
-            <input type="text"
-                   placeholder="Search Assignments"
-                   id="text-fields-search-assignments"/><br/>
-            <br>
-            <button type="button">Apply Filters</button>
-            <br/>
-            <br/>
-            <table border="1" width="100%">
-                <thead>
-                <tr>
-                    <th>Student Name</th>
-                    <th>Assignment 1</th>
-                    <th>Assignment 2</th>
-                    <th>Assignment 3</th>
-                    <th>Assignment 4</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Charlie</td>
-                    <td>34</td>
-                    <td>58</td>
-                    <td>
-                        <label for="text-fields-charlie-grade">
-                        </label>
-                        <input type="number"
-                               max="100"
-                               min="0"
-                               id="text-fields-charlie-grade"
-                               value="54"/>
-                    </td>
-                    <td>54</td>
-                </tr>
-                <tr>
-                    <td>Dennis</td>
-                    <td>88</td>
-                    <td>81</td>
-                    <td>91</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>Mac</td>
-                    <td>
-                        <label for="text-fields-mac-grade">
-                        </label>
-                        <input type="number"
-                               max="100"
-                               min="0"
-                               id="text-fields-mac-grade"
-                               value="78"/>
-                    </td>
-                    <td>71</td>
-                    <td>71</td>
-                    <td>60</td>
-                </tr>
-                <tr>
-                    <td>Frank</td>
-                    <td>94</td>
-                    <td>89</td>
-                    <td>
-                        <label for="text-fields-frank-grade">
-                        </label>
-                        <input type="number"
-                               max="100"
-                               min="0"
-                               id="text-fields-frank-grade"
-                               value="90"/>
-                    </td>
-                    <td>80</td>
-                </tr>
-                </tbody>
-            </table>
-        </td>
-    </tr>
-    </tbody>
-</table>
+                            Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fas fa-tachometer-alt" style="color: #ff0000;" aria-hidden=true></i> <br>
+
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="wd-active">
+                        <a href="home.html">
+                            <i class="fa fa-book" style="color: #ff0000;"></i> <br>
+
+                            Courses
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-calendar" style="color: #ff0000;" aria-hidden=true></i> <br>
+ 
+                            Calendar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-envelope-open-text" style="color: #ff0000;"></i> <br>
+
+                            Inbox
+                    </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-clock" style="color: #ff0000;"></i> <br> 
+
+                            History
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-film" style="color: #ff0000;"></i> <br>
+
+                            Studio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-arrow-circle-right" style="color: #ff0000;"></i> <br>
+
+                            Commons
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-question-circle" style="color: #ff0000;"></i> <br>
+                            
+                            Help
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <nav aria-label="breadcrumb" style="padding-left: 15px; margin-top: 10px;">
+                    <ol class="breadcrumb ">
+                      <li class="breadcrumb-item active" aria-current="page">CS5610.11744.202310 > Grades</li>
+                    </ol>
+                  </nav>
+                  <!-- TODO - WRONG PLACE -->
+                <ul class="wd-course-navigation">
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Modules</a>
+                    </li>
+                    <li>
+                        <a href="#">Piazza</a>
+                    </li>
+                    <li>
+                        <a href="#">Zoom Meetings</a>
+                    </li>
+                    <li>
+                        <a href="assignments/index.html">Assignments</a>
+                    </li>
+                    <li>
+                        <a href="#">Quizzes</a>
+                    </li>
+                    <li class="wd-active">
+                        <a href="grades.html">Grades</a>
+                    </li>
+                    <li>
+                        <a href="#">People</a>
+                    </li>
+                    <li>
+                        <a href="#">Panopto Video</a>
+                    </li>
+                    <li>
+                        <a href="#">Discussions</a>
+                    </li>
+                    <li>
+                        <a href="#">Announcements</a>
+                    </li>
+                    <li>
+                        <a href="#">Pages</a>
+                    </li>
+                    <li>
+                        <a href="#">Files</a>
+                    </li>
+                    <li>
+                        <a href="#">Rubrics</a>
+                    </li>
+                    <li>
+                        <a href="#">Outcomes</a>
+                    </li>
+                    <li>
+                        <a href="#">Collaborations</a>
+                    </li>
+                    <li>
+                        <a href="#">Syllabus</a>
+                    </li>
+                    <li>
+                        <a href="#">Settings</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wd-flex-grow-1" style="padding-top: 20px; padding-right: 20px;">
+                <div class="float-end">
+                    <form action="index.html" style="display: inline;">
+                        <button type="button" class="btn btn-outline-secondary"><i class="fas fa-file-import"></i> Import</button>
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-file-export"></i>Export
+                        </button>
+                    </form>
+                </div> 
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <h5>Student Names</h5>
+                            <input class="form-control"  type="text" placeholder="Search Students" id="text-fields-search-students"/>
+                        </div>
+                        <div class="col-4">
+                            <h5>Assignment Names</h5>
+                            <input class="form-control"  type="text" placeholder="Search Assignments" id="text-fields-search-assignments"/>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <button type="button" class="btn btn-outline-secondary">Apply Filters</button>
+                <br/>
+                <br/>
+                <table class="table table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Assignment 1</th>
+                        <th>Assignment 2</th>
+                        <th>Assignment 3</th>
+                        <th>Assignment 4</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Charlie</td>
+                        <td>34</td>
+                        <td>58</td>
+                        <td>
+                            <label for="text-fields-charlie-grade">
+                            </label>
+                            <input type="number"
+                                   max="100"
+                                   min="0"
+                                   id="text-fields-charlie-grade"
+                                   value="54"/>
+                        </td>
+                        <td>54</td>
+                    </tr>
+                    <tr>
+                        <td>Dennis</td>
+                        <td>88</td>
+                        <td>81</td>
+                        <td>91</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>Mac</td>
+                        <td>
+                            <label for="text-fields-mac-grade">
+                            </label>
+                            <input type="number"
+                                   max="100"
+                                   min="0"
+                                   id="text-fields-mac-grade"
+                                   value="78"/>
+                        </td>
+                        <td>71</td>
+                        <td>71</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>Frank</td>
+                        <td>94</td>
+                        <td>89</td>
+                        <td>
+                            <label for="text-fields-frank-grade">
+                            </label>
+                            <input type="number"
+                                   max="100"
+                                   min="0"
+                                   id="text-fields-frank-grade"
+                                   value="90"/>
+                        </td>
+                        <td>80</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

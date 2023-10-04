@@ -1,41 +1,92 @@
-<table width="100%">
-    <tbody>
-    <tr>
-        <td valign="top">
-            <ul>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/public/styles.css" />
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wd-flex-row-container">
+        <div class="wd-bg-color-black">
+            <ul class="wd-kanbas-navigation">
                 <li>
-                    <a href="../profile/index.html">Account</a>
+                    <img src="/public/nLogo.png" height="70px" />
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a href="/public/Kanbas/profile/index.html">
+                        <i class="fas fa-user" style="color: #ffffff;" aria-hidden=true></i> <br>
+
+                        Account
+                    </a>
                 </li>
                 <li>
-                    <a href="../home.html">Courses</a>
+                    <a href="/public/Kanbas/dashboard.html">
+                        <i class="fas fa-tachometer-alt" style="color: #ff0000;" aria-hidden=true></i> <br>
+
+                        Dashboard
+                    </a>
+                </li>
+                <li class="wd-active">
+                    <a href="/public/Kanbas/home.html">
+                        <i class="fa fa-book" style="color: #ff0000;"></i> <br>
+
+                        Courses
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Calendar</a>
+                    <a href="#">
+                        <i class="fas fa-calendar" style="color: #ff0000;" aria-hidden=true></i> <br>
+
+                        Calendar
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Inbox</a>
+                    <a href="#">
+                        <i class="fa fa-envelope-open-text" style="color: #ff0000;"></i> <br>
+
+                        Inbox
+                    </a>
                 </li>
                 <li>
-                    <a href="#">History</a>
+                    <a href="#">
+                        <i class="fa fa-clock" style="color: #ff0000;"></i> <br>
+
+                        History
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Studio</a>
+                    <a href="#">
+                        <i class="fa fa-film" style="color: #ff0000;"></i> <br>
+
+                        Studio
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Commons</a>
+                    <a href="#">
+                        <i class="fa fa-arrow-circle-right" style="color: #ff0000;"></i> <br>
+
+                        Commons
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Help</a>
+                    <a href="#">
+                        <i class="fa fa-question-circle" style="color: #ff0000;"></i> <br>
+
+                        Help
+                    </a>
                 </li>
             </ul>
-        </td>
-        <td valign="top">
-            <ul>
+        </div>
+        <div>
+            <nav aria-label="breadcrumb" style="padding-left: 15px; margin-top: 10px;">
+                <ol class="breadcrumb ">
+                    <li class="breadcrumb-item active" aria-current="page">CS5610.11... > Assignments > A1 - ENV...</li>
+                </ol>
+            </nav>
+            <ul class="wd-course-navigation">
                 <li>
-                    <a href="../home.html">Home</a>
+                    <a href="/public/Kanbas/home.html">Home</a>
                 </li>
                 <li>
                     <a href="#">Modules</a>
@@ -46,14 +97,14 @@
                 <li>
                     <a href="#">Zoom Meetings</a>
                 </li>
-                <li>
-                    <a href="index.html">Assignments</a>
+                <li class="wd-active">
+                    <a href="/public/Kanbas/assignments/index.html">Assignments</a>
                 </li>
                 <li>
                     <a href="#">Quizzes</a>
                 </li>
                 <li>
-                    <a href="../grades.html">Grades</a>
+                    <a href="/public/Kanbas/grades.html">Grades</a>
                 </li>
                 <li>
                     <a href="#">People</a>
@@ -89,118 +140,130 @@
                     <a href="#">Settings</a>
                 </li>
             </ul>
-        </td>
-        <td valign="top">
-            <select id="select-one-assignments">
-                <option selected value="SPEEDGRADER">Speed Grader</option>
-            </select>
+        </div>
+        <div class="wd-flex-grow-1">
+            <div class="float-end justify-content-end">
+                <p style="color: green; padding-top: 20px; padding-right: 10px;">
+                    <i class="fa fa-check-circle" aria-hidden="true" style="color: green;"></i> Published
+                </p>
+            </div>
+            <br>
+            <br>
             <hr>
-            <h3>
+            <h5>
                 Assignment Name
-            </h3>
-            <input type="text" id="text-fields-assignment-name"
-                   value="Assignment Name"/><br/>
-            <br/>
-            <form id="textarea">
-                <textarea cols="20" rows="2">This is the assignment description.</textarea>
-            </form>
-            <br/>
-            <label for="text-fields-points">
-                Points <br>
-            </label>
-            <input type="number"
-                   id="text-fields-points"
-                   placeholder="100"
-                   value="100"/><br/>
+            </h5>
+            <input class="form-control" type="text" placeholder="A1 - ENV + HTML"
+                id="text-fields-search-students" /><br />
+            <br />
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px;"></textarea>
+                <label for="floatingTextarea2">This assignment describes how to install the development environment for
+                    creating and working with ...</label>
+            </div>
+            <br />
+            <div class="row" style="padding-left: 40px;">
+                <div class="col-2">Points: </div>
+                <div class="col"><input class="form-control" type="number" placeholder="100"
+                        id="text-fields-search-students" />
+                </div>
+            </div>
+            <br />
+            <div class="row" style="padding-left: 40px;">
+                <div class="col-2">Assignment Group: </div>
+                <div class="col">
+                    <select class="form-select">
+                        <option>ASSIGNMENTS</option>
+                    </select>
+                </div>
+            </div>
             <br>
-            Assignment Group <br>
-            <select id="select-one-assignments-group">
-                <option selected value="ASSIGNMENTS">ASSIGNMENTS</option>
-            </select> <br/>
+            <div class="row" style="padding-left: 40px;">
+                <div class="col-2">Display Grade As: </div>
+                <div class="col">
+                    <select class="form-select">
+                        <option>PERCENTAGE</option>
+                    </select>
+                </div>
+            </div>
             <br>
-            Display Grade as <br>
-            <select id="select-one-grade-display">
-                <option selected value="PERCENTAGE">Percentage</option>
-            </select> <br/>
+            <div class="row" style="padding-left: 220px;">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="r6" />
+                    <label class="form-check-label" for="r6">
+                        Do not count this assignment towards the final grade</label>
+                </div>
+            </div>
             <br>
-            Submission Type <br>
-            <select id="select-one-submission-type">
-                <option selected value="ONLINE">Online</option>
-            </select> <br/>
-            <form>
-                <label>Online Entry Options</label>
-                <br/>
-                <input type="checkbox" value="TEXTENTRY"
-                       name="check-genre" id="chkbox-textentry"/>
-                <label for="chkbox-textentry">Text Entry</label> <br/>
-                <input type="checkbox" value="WEBSITE"
-                       name="check-genre" id="chkbox-website"/>
-                <label for="chkbox-website">Website URL</label> <br/>
-                <input type="checkbox" value="MEDIA"
-                       name="check-genre" id="chkbox-media"/>
-                <label for="chkbox-media">Media Recordings</label> <br/>
-                <input type="checkbox" value="ANNOTATION"
-                       name="check-genre" id="chkbox-annotation"/>
-                <label for="chkbox-annotation">Student Annotation</label> <br/>
-                <input type="checkbox" value="FILE"
-                       name="check-genre" id="chkbox-file"/>
-                <label for="chkbox-file">File Uploads</label>
-            </form>
-            Submission Attempts <br>
-            <select id="select-one-submission-attempts">
-                <option selected value="UNLIMITED">Unlimited</option>
-            </select> <br/>
+            <div class="row" style="padding-left: 40px;">
+                <div class="col-2">Submission Type: </div>
+                <div class="col">
+                    <select class="form-select">
+                        <option>ONLINE</option>
+                    </select>
+                    <br>
+                    Online Entry Options: <br>
+                    <div class="form-check">
+                        <input class="form-check-input" checked type="checkbox" id="r6" />
+                        <label class="form-check-label" for="r6"> Text Entry</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" checked type="checkbox" id="r6" />
+                        <label class="form-check-label" for="r6"> Website URL</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" checked type="checkbox" id="r6" />
+                        <label class="form-check-label" for="r6"> Media Recordings</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="r6" />
+                        <label class="form-check-label" for="r6"> Student Annotations</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="r6" />
+                        <label class="form-check-label" for="r6"> File Upload</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="r6" />
+                        <label class="form-check-label" for="r6"> Text Entry</label>
+                    </div>
+                </div>
+            </div>
             <br>
-            Plagiarism Review <br>
-            <select id="select-one-plagiarism">
-                <option selected value="NONE">None</option>
-            </select> <br/>
-            <br/>
-            <form>
-                <label>Group Assignment</label>
-                <br/>
-                <input type="checkbox" value="GROUP"
-                       name="check-genre" id="chkbox-group"/>
-                <label for="chkbox-group">This is a group assignment</label> <br/>
-            </form>
-            <form>
-                <label>Peer Reviews</label>
-                <br/>
-                <input type="checkbox" value="REVIEWS"
-                       name="check-genre" id="chkbox-reviews"/>
-                <label for="chkbox-reviews">Require Peer Reviews</label> <br/>
-            </form>
-            Assign <br>
-            Assign to <br>
-            <input type="text" id="text-fields-assign-to"
-                   value="Everyone"/><br/>
-            <br/>
-            <label for="text-fields-due">
-                Due <br/>
-            </label>
-            <input type="date"
-                   id="text-fields-due"
-                   value="2021-01-01"/><br/>
-            <br/>
-            <label for="text-fields-due">
-                Available from <br/>
-            </label>
-            <input type="date"
-                   id="text-fields-from"
-                   value="2021-01-01"/><br/>
-            <br/>
-            <label for="text-fields-due">
-                Until <br/>
-            </label>
-            <input type="date"
-                   id="text-fields-until"
-                   value="2021-01-01"/><br/>
-            <br/>
-            <form action="index.html">
-                <input type="submit" value="Cancel" />
-                <input type="submit" value="Save" />
-            </form>
-        </td>
-    </tr>
-    </tbody>
-</table>
+            <div class="row" style="padding-left: 40px;">
+                <div class="col-2">Assign: </div>
+                <div class="col">
+                    Assign to: <br>
+                    <input class="form-control" type="text" placeholder="EVERYONE"
+                        id="text-fields-search-students" /><br />
+                    Due: <br>
+                    <input class="form-control" type="date" id="text-fields-dob" value="2000-01-21" /><br />
+                    <div class="row">
+                        <div class="col-4">
+                            Available From:
+                            <input class="form-control" type="date" id="text-fields-dob" value="2000-01-21" /><br />
+                        </div>
+                        <div class="col-4">
+                            Until:
+                            <input class="form-control" type="date" id="text-fields-dob" value="2000-01-21" /><br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="form-check" style="padding-bottom: 20px;">
+                <input class="form-check-input" type="checkbox" id="r6" />
+                <label class="form-check-label" for="r6"> Notify users that this content has changed</label>
+                <div class="float-end">
+                    <form action="index.html" style="display: inline;">
+                        <button type="button submit" class="btn btn-outline-secondary">Cancel</button>
+                        <button type="button submit" class="btn btn-danger">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

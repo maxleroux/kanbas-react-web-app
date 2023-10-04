@@ -1,43 +1,89 @@
-<table width="100%">
-    <tbody>
-    <tr>
-        <td valign="top">
-            <ul>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/public/styles.css" />
+    <link href="/public/vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="/public/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="wd-flex-row-container">
+        <div class="wd-bg-color-black">
+            <ul class="wd-kanbas-navigation">
                 <li>
-                    <a href="index.html">Account</a>
+                    <img src="/public/nLogo.png" height="70px" />
+                </li>
+                <li class="wd-active">
+                    <a href="index.html">
+                        <i class="fas fa-user" style="color: black;" aria-hidden=true></i> <br>
+
+                        Account
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a href="/public/Kanbas/dashboard.html">
+                        <i class="fas fa-tachometer-alt" style="color: #ff0000;" aria-hidden=true></i> <br>
+
+                        Dashboard
+                    </a>
                 </li>
                 <li>
-                    <a href="../home.html">Courses</a>
+                    <a href="/public/Kanbas/home.html">
+                        <i class="fa fa-book" style="color: #ff0000;"></i> <br>
+
+                        Courses
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Calendar</a>
+                    <a href="#">
+                        <i class="fas fa-calendar" style="color: #ff0000;" aria-hidden=true></i> <br>
+
+                        Calendar
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Inbox</a>
+                    <a href="#">
+                        <i class="fa fa-envelope-open-text" style="color: #ff0000;"></i> <br>
+
+                        Inbox
+                    </a>
                 </li>
                 <li>
-                    <a href="#">History</a>
+                    <a href="#">
+                        <i class="fa fa-clock" style="color: #ff0000;"></i> <br>
+
+                        History
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Studio</a>
+                    <a href="#">
+                        <i class="fa fa-film" style="color: #ff0000;"></i> <br>
+
+                        Studio
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Commons</a>
+                    <a href="#">
+                        <i class="fa fa-arrow-circle-right" style="color: #ff0000;"></i> <br>
+
+                        Commons
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Help</a>
+                    <a href="#">
+                        <i class="fa fa-question-circle" style="color: #ff0000;"></i> <br>
+
+                        Help
+                    </a>
                 </li>
             </ul>
-        </td>
-        <td valign="top">
-            <ul>
+        </div>
+        <div>
+            <ul class="wd-account-navigation">
                 <li>
                     <a href="#">Notifications</a>
                 </li>
-                <li>
+                <li class="wd-active">
                     <a href="index.html">Profile</a>
                 </li>
                 <li>
@@ -62,45 +108,49 @@
                     <a href="#">Global Announcements</a>
                 </li>
             </ul>
-        </td>
-        <td valign="top">
-            Max Leroux's Profile <br>
+            </ul>
+        </div>
+        <div class="wd-flex-grow-1" style="padding-right: 20px;">
             <br>
+            Max Leroux's Profile <br>
             <hr>
             <br>
             <form action="edit.html">
-                <button style="float: right;">
-                    <img src="pencil.png"
-                         height="12px"/>
+                <button style="float: right;" type="button submit" class="btn btn-outline-secondary">
+                    <i class="fa fa-pencil-alt"></i>
                     Edit Profile
                 </button>
             </form>
+            <i class="fas fa-user" style="color: grey; font-size: 120px;" aria-hidden=true></i> 
+            <br>
+            <br>
             <font size="5">
                 Max Leroux
             </font>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <font size="4">
                 Contact
-            </font> <br/>
+            </font> <br />
             <font size="2">
-                No registered services, you can add some on the <a href="#">settings</a> page <br/>
+                No registered services, you can add some on the <a href="#">settings</a> page <br />
             </font>
-            <br/>
+            <br />
             <font size="4">
                 Biography
-            </font> <br/>
+            </font> <br />
             <font size="2">
-                CS and Math Student <br/>
+                CS and Math Student <br />
             </font>
-            <br/>
+            <br />
             <font size="4">
                 Links
-            </font> <br/>
+            </font> <br />
             <font size="2">
-                <a href="#">Youtube</a> <br/>
+                <a href="https://www.youtube.com/watch?v=9XsRrm-VKj4">Youtube</a> <br />
             </font>
-        </td>
-    </tr>
-    </tbody>
-</table>
+        </div>
+    </div>
+</body>
+
+</html>
