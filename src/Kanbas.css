@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.kn-list-group {
+  height: 100vh;
+  background-color: black;
+}
+
+.kn-list-group .list-group-item {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 12px;
+}
+
+.kn-list-group .list-group-item.active {
+  background-color: white;
+  color: red;
+}
+
+.kn-list-group .list-group-item svg {
+  color: red;
+  font-size: 23px;
+  padding-bottom: 3px;
+}
+
+.kn-list-group .list-group-item.account-icon svg {
+  color: white;
+}
+
+.kn-list-group .list-group-item.account-icon-active svg {
+  color: black;
+}
+
+.nLogo {
+  background-color: black;
+}
+
+.dashboard {
+  padding-left: 20px;
+  padding-top: 20px;
+  width: 1300px;
+}
+
+.dashboard .list-group-item {
+  margin-top: 25px;
+  margin-left: 25px;
+  width: 325px;
+  height: 335px;
+}
+
+.wd-flex-grow-1 {
+  flex-grow: 1;
+}
+
+.redPic {
+  height: 200px;
+  width: 100%;
+}
+
+.cn-list-group {
+  background-color: white;
+  list-style: none;
+  padding: 10px;
+  width: 195px;
+}
+
+.cn-list-group .list-group-item {
+  background-color: white;
+  color: red;
+  text-align: left;
+  width: 150px;
+  padding: Opx;
+  width: 140px;
+  margin: Opx;
+  margin-left: 10px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+.cn-list-group .list-group-item.active {
+  padding-left: 5px;
+  border-left: 1px solid black;
+  color: black;
+  background-color: white;
+}
+
+.dashboard-text {
+  padding-left: 10px;
+}
+
+.breadcrumb {
+  color: red;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.breadcrumb h1 {
+  font-size: 16px;
+}
+
+.list-group .list-group-item{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px;
+  width: 100wh;
+}
+
+.list-group .header {
+  padding: 10px;
+  background-color: lightgrey;
+  font-size: 20px;
+}
+
+.list-group p {
+  padding: 5px;
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.home {
+  width: 800px;
+}
+
+.assignments-list-group .list-group-item {
+  padding-left: 0;
+  padding: 8px;
+  border: solid;
+  border-color: lightgray;
+}
+
+.assignments-list-group .assignments-title {
+  padding: 8px;
+  background-color: lightgrey;
+  margin: 0px;
+}
+
+.assignments-list-group ul {
+  text-decoration: none;
+  padding-left: 0px;
+  padding-top: 10px;
+}
