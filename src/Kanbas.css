@@ -105,6 +105,8 @@ body * {
 
 .breadcrumb h1 {
   font-size: 16px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .list-group .list-group-item{
