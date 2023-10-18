@@ -16,7 +16,7 @@ function Courses() {
         <div className="col-2" >
           <CourseNavigation />
         </div>
-        <div className="col" style={{ width: "100%", padding: 0}}>
+        <div className="col" style={{ width: "100%", paddingTop: "70px"}}>
           <div>
             <Routes>
               <Route path="/" element={<Navigate to="Home" />} />
