@@ -16,7 +16,7 @@ function AssignmentEditor() {
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
   return (
-    <div style={{ paddingLeft: "80px", width: "830px" }}>
+    <div style={{ width: "95%" }}>
       <p className="float-end" style={{ color: "green" }}><FaCheckCircle /> Published</p>
       <br />
       <hr />
@@ -28,7 +28,7 @@ function AssignmentEditor() {
         Save
       </button>
       <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
-        className="btn btn-outline-secondary float-end">
+        className="btn btn-outline-secondary float-end" style={{ marginRight: 10 }}>
         Cancel
       </Link>
       <br /> <br />
@@ -135,7 +135,7 @@ function AssignmentEditor() {
             Save
           </button>
           <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
-            className="btn btn-outline-secondary float-end">
+            className="btn btn-outline-secondary float-end" style={{ marginRight: 10 }}>
             Cancel
           </Link>
         </div>

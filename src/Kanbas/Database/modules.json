@@ -106,23 +106,5 @@
       "name": "Research II",
       "description": "Working with a faculty on a topic of the student's choice.",
       "course": "RS106"
-    },
-    {
-      "_id": "M601",
-      "name": "Special Relativity I",
-      "description": "Higher level theorem proving.",
-      "course": "RS106"
-    },
-    {
-      "_id": "M602",
-      "name": "Research I",
-      "description": "Working with a faculty on a topic of the student's choice.",
-      "course": "RS106"
-    },
-    {
-      "_id": "M603",
-      "name": "Research II",
-      "description": "Working with a faculty on a topic of the student's choice.",
-      "course": "RS106"
     }
   ]

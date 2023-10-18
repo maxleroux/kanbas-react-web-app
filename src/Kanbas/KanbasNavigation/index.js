@@ -3,7 +3,7 @@ import { FaUserCircle, FaTachometerAlt, FaBook, FaCalendar, FaEnvelopeOpenText, 
 import '../../Kanbas.css'
 function KanbasNavigation() {
   const links = ["Account", "Dashboard", "Courses", "Calendar", "Inbox", "History", "Studio", "Commons", "Help"];
-  const icons = [<FaUserCircle/>, <FaTachometerAlt />, <FaBook />, <FaCalendar />,
+  const icons = [<FaUserCircle style={{fontSize: "40px"}}/>, <FaTachometerAlt />, <FaBook />, <FaCalendar />,
   <FaEnvelopeOpenText />, <FaClock />, <FaFilm />, <FaArrowCircleRight />, <FaQuestionCircle />]
   const { pathname } = useLocation();
   return (

@@ -6,12 +6,12 @@ import Courses from "./Courses";
 
 function Kanbas() {
   return (
-    <div className="d-flex">
+    <div className="d-flex" style={{width: "99%"}}>
       <KanbasNavigation />
-      <div>
+      <div style={{width: "100%"}}>
         <Routes>
           <Route path="/" element={<Navigate to="Dashboard" />} />
-          <Route path="Account" element={<h1>Account</h1>} />
+          <Route path="Account" element={<h2 style={{padding: "20px"}}>Account</h2>} />
           <Route path="Dashboard" element={<Dashboard />} />
           <Route path="Courses/:courseId/*" element={<Courses />} />
         </Routes>

@@ -1,7 +1,7 @@
 import ModuleList from "./ModuleList";
 function Modules() {
   return (
-    <div style={{paddingLeft: "80px", width: "830px"}}>
+    <div>
       <hr/>
       <ModuleList />
     </div>

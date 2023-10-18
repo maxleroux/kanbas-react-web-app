@@ -11,7 +11,7 @@ function Home() {
           <form action="index.html" style={{display: "inline"}}>
             <button type="button" class="btn btn-outline-secondary">Collapse All</button>
             <button type="button" class="btn btn-outline-secondary"><FaCheckCircle /> &nbsp;View Progress</button>
-            <select class="form-select" style={{display: "inline", width: "200px"}}>
+            <select class="form-select" style={{display: "inline", width: "200px", margin: 5}}>
               <option>Publish All</option>
               <option>Publish All modules and items</option>
               <option>Publish modules only</option>
@@ -24,8 +24,8 @@ function Home() {
       </div>
       <div className="float-end" style={{ width: "250px"}}>
         <h3>Course Status</h3>
-        <button type="button" class="btn btn-outline-secondary" style={{ width: 100 + "px" }}>Unpublish</button>
-        <button type="button" class="btn btn-success" style={{ width: 110 + "px" }}>
+        <button type="button" class="btn btn-outline-secondary" style={{ width: 80 + "px", marginRight: 10 }}>Unpublish</button>
+        <button type="button" class="btn btn-success" style={{ width: 90 + "px" }}>
           <FaCheckCircle style={{ color: "white" }} /> &nbsp;Publish</button>
         <br />
         <br />
