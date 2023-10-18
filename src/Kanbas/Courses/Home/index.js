@@ -24,7 +24,7 @@ function Home() {
       </div>
       <div className="float-end" style={{ width: "250px"}}>
         <h3>Course Status</h3>
-        <button type="button" class="btn btn-outline-secondary" style={{ width: 110 + "px", marginRight: 10 }}>Unpublish</button>
+        <button type="button" class="btn btn-outline-secondary" style={{ width: 100 + "px", marginRight: 10 }}>Unpublish</button>
         <button type="button" class="btn btn-success" style={{ width: 110 + "px" }}>
           <FaCheckCircle style={{ color: "white" }} /> &nbsp;Publish</button>
         <br />
