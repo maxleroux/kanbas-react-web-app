@@ -9,17 +9,17 @@ function Assignments() {
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId);
   return (
-    <div className="row" style={{ width: "100%"}}>
+    <div className="row" style={{ width: "100%" }}>
       <div className="col float-end" style={{ paddingBottom: "10px" }}>
         <form action="index.html" style={{ display: "inline" }}>
           <input class="form-control float-start justify-content-start" type="text" placeholder="Search for Assignment" id="text-fields-search-students" style={{ width: "250px" }} />
           <div class="float-end justify-content-end">
-            <button type="button" class="btn btn-outline-secondary" style={{marginRight: 10}}> + Group</button>
+            <button type="button" class="btn btn-outline-secondary" style={{ marginRight: 10 }}> + Group</button>
             <button type="button" class="btn btn-danger"> + Assignment</button>
           </div>
         </form>
       </div>
-      <hr/>
+      <hr />
       <div className="assignments-list-group">
         <ul>
           <p className="assignments-title">
@@ -31,7 +31,7 @@ function Assignments() {
               to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
               className="list-group-item">
               {assignment.title}
-              <FaCheckCircle className="float-end" style={{color: "green"}}/>
+              <FaCheckCircle className="float-end" style={{ color: "green" }} />
             </Link>
           ))}
         </ul>

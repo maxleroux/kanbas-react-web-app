@@ -5,11 +5,11 @@ function Home() {
   const icons = [<FaCheckCircle />, <FaFileImport />, <FaBullseye />, <FaBell />, <FaChartBar />]
   return (
     <div className="row" >
-      <div className="col" style={{ width: "900px" }}>
+      <div className="col" style={{ width: "900px"}}>
         <hr />
         <div style={{paddingBottom: "10px"}}>
           <form action="index.html" style={{display: "inline"}}>
-            <button type="button" class="btn btn-outline-secondary">Collapse All</button>
+            <button type="button" class="btn btn-outline-secondary">Collapse All</button> &nbsp;
             <button type="button" class="btn btn-outline-secondary"><FaCheckCircle /> &nbsp;View Progress</button>
             <select class="form-select" style={{display: "inline", width: "200px", margin: 5}}>
               <option>Publish All</option>

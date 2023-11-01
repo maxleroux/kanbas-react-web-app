@@ -3,13 +3,13 @@ import { Link, useParams, useLocation } from "react-router-dom";
 import '../../../Kanbas.css'
 import { FaGripLines } from "react-icons/fa";
 
-function CourseNavigation() {
+function CourseNavigation({ courses }) {
   const links = ["Home", "Modules", "Piazza", "Zoom Meetings", "Assignments", "Quizzes", "Grades", "People",
     "Panopto Video", "Discussion", "Announcements", "Pages", "Files", "Rubrics", "Outcomes", "Collaborations",
     "Syllabus", "Settings"];
   const { courseId } = useParams();
   const { pathname } = useLocation();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   return (
     <div>
       <div className="row breadcrumb">
