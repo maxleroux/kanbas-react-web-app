@@ -6,15 +6,28 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-function Courses({ courses }) {
+function Courses() {
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+  const URL = "https://kanbas-node-server-app-3en7.onrender.com/api/courses";
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(
+      `${URL}/${courseId}`
+    );
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
   return (
     <div style={{width: "100%"}}>
       <div className="row" style={{ width: "100%", padding: 0}}>
         <div className="col-2" >
-          <CourseNavigation courses={courses}/>
+          <CourseNavigation/>
         </div>
         <div className="col" style={{ width: "100%", paddingTop: "70px"}}>
           <div>

@@ -3,17 +3,17 @@ import { Link, useParams, useLocation } from "react-router-dom";
 import '../../../Kanbas.css'
 import { FaGripLines } from "react-icons/fa";
 
-function CourseNavigation({ courses }) {
+function CourseNavigation() {
   const links = ["Home", "Modules", "Piazza", "Zoom Meetings", "Assignments", "Quizzes", "Grades", "People",
     "Panopto Video", "Discussion", "Announcements", "Pages", "Files", "Rubrics", "Outcomes", "Collaborations",
     "Syllabus", "Settings"];
   const { courseId } = useParams();
   const { pathname } = useLocation();
-  const course = courses.find((course) => course._id === courseId);
+  // const course = courses.find((course) => course._id === courseId);
   return (
     <div>
       <div className="row breadcrumb">
-        <h1><FaGripLines /> {course.number} {">"} {pathname.slice(pathname.lastIndexOf("/"), pathname.length).substring(1)} </h1>
+        {/* <h1><FaGripLines /> {course.number} {">"} {pathname.slice(pathname.lastIndexOf("/"), pathname.length).substring(1)} </h1> */}
       </div>
       <div className="list-group-flush cn-list-group" style={{ width: "100%" }}>
         {links.map((link, index) => (
