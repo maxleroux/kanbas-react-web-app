@@ -9,6 +9,7 @@ import {
   setModule,
   setModules,
 } from "./modulesReducer";
+import { findModulesForCourse, createModule } from "./client";
 import * as client from "./client";
 
 function ModuleList() {
