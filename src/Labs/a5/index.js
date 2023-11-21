@@ -12,7 +12,6 @@ function Assignment5() {
             Welcome
           </a>
         </div>
-        {/* <SimpleAPIExamples /> */}
         <EncodingParametersInURLs/>
         <WorkingWithObjects/>
         <WorkingWithArrays/>
