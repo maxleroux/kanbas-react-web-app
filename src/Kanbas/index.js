@@ -19,7 +19,7 @@ function Kanbas() {
     findAllCourses();
   }, []);
   const [course, setCourse] = useState({
-    name: "New Course", number: "New Number",
+    name: "New Course",      number: "New Number",
     startDate: "2023-09-10", endDate: "2023-12-15",
   });
   const addNewCourse = async () => {
@@ -48,27 +48,26 @@ function Kanbas() {
       })
     );
   };
-};
-return (
-  <Provider store={store}>
-    <div className="d-flex" style={{ width: "99%" }}>
-      <KanbasNavigation />
-      <div style={{ width: "100%" }}>
-        <Routes>
-          <Route path="/" element={<Navigate to="Dashboard" />} />
-          <Route path="Account" element={<h2 style={{ padding: "20px" }}>Account</h2>} />
-          <Route path="Dashboard" element={<Dashboard
-            courses={courses}
-            course={course}
-            setCourse={setCourse}
-            addNewCourse={addNewCourse}
-            deleteCourse={deleteCourse}
-            updateCourse={updateCourse} />} />
-          <Route path="Courses/:courseId/*" element={<Courses courses={courses} />} />
-        </Routes>
+  return (
+    <Provider store={store}>
+      <div className="d-flex" style={{ width: "99%" }}>
+        <KanbasNavigation />
+        <div style={{ width: "100%" }}>
+          <Routes>
+            <Route path="/" element={<Navigate to="Dashboard" />} />
+            <Route path="Account" element={<h2 style={{ padding: "20px" }}>Account</h2>} />
+            <Route path="Dashboard" element={<Dashboard
+              courses={courses}
+              course={course}
+              setCourse={setCourse}
+              addNewCourse={addNewCourse}
+              deleteCourse={deleteCourse}
+              updateCourse={updateCourse} />} />
+            <Route path="Courses/:courseId/*" element={<Courses courses={courses} />} />
+          </Routes>
+        </div>
       </div>
-    </div>
-  </Provider>
-);
+    </Provider>
+  );
 }
 export default Kanbas;
