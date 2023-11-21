@@ -5,15 +5,16 @@ const initialState = {
   module: { name: "New Module 123", description: "New Description" },
 };
 
+
 const modulesSlice = createSlice({
   name: "modules",
   initialState,
   reducers: {
-    addModule: (state, action) => {
-      state.modules = [action.payload, ...state.modules];
-    },
     setModules: (state, action) => {
       state.modules = action.payload;
+    },
+    addModule: (state, action) => {
+      state.modules = [action.payload, ...state.modules];
     },
     deleteModule: (state, action) => {
       state.modules = state.modules.filter(
@@ -35,7 +36,7 @@ const modulesSlice = createSlice({
   },
 });
 
+
 export const { addModule, deleteModule,
   updateModule, setModule, setModules } = modulesSlice.actions;
 export default modulesSlice.reducer;
-

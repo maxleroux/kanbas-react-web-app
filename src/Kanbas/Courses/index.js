@@ -22,7 +22,7 @@ function Courses() {
   useEffect(() => {
     findCourseById(courseId);
   }, [courseId]);
-
+  const { pathname } = useLocation();
   return (
     <div style={{width: "100%"}}>
       <div className="row" style={{ width: "100%", padding: 0}}>

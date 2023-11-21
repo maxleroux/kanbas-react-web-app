@@ -24,20 +24,16 @@ function Kanbas() {
   });
   const addNewCourse = async () => {
     const response = await axios.post(URL, course);
-    setCourses([
-      response.data,
-      ...courses,
-    ]);
+    setCourses([response.data, ...courses]);
     setCourse({ name: "" });
   };
-  const deleteCourse = async (course) => {
+  const deleteCourse = async (course_id) => {
     const response = await axios.delete(
-      `${URL}/${course._id}`
+      `${URL}/${course_id}`
     );
-    setCourses(courses.filter(
-      (c) => c._id !== course._id));
+    setCourses(courses.filter((course) => course._id !== course_id));
   };
-  const updateCourse = async (course) => {
+  const updateCourse = async () => {
     const response = await axios.put(
       `${URL}/${course._id}`,
       course
@@ -45,33 +41,34 @@ function Kanbas() {
     setCourses(
       courses.map((c) => {
         if (c._id === course._id) {
-          return course;
+          return response.data;
+        } else {
+          return c;
         }
-        return c;
       })
     );
-    setCourse({ name: "" });
   };
-  return (
-    <Provider store={store}>
-      <div className="d-flex" style={{ width: "99%" }}>
-        <KanbasNavigation />
-        <div style={{ width: "100%" }}>
-          <Routes>
-            <Route path="/" element={<Navigate to="Dashboard" />} />
-            <Route path="Account" element={<h2 style={{ padding: "20px" }}>Account</h2>} />
-            <Route path="Dashboard" element={<Dashboard
-              courses={courses}
-              course={course}
-              setCourse={setCourse}
-              addNewCourse={addNewCourse}
-              deleteCourse={deleteCourse}
-              updateCourse={updateCourse} />} />
-            <Route path="Courses/:courseId/*" element={<Courses courses={courses} />} />
-          </Routes>
-        </div>
+};
+return (
+  <Provider store={store}>
+    <div className="d-flex" style={{ width: "99%" }}>
+      <KanbasNavigation />
+      <div style={{ width: "100%" }}>
+        <Routes>
+          <Route path="/" element={<Navigate to="Dashboard" />} />
+          <Route path="Account" element={<h2 style={{ padding: "20px" }}>Account</h2>} />
+          <Route path="Dashboard" element={<Dashboard
+            courses={courses}
+            course={course}
+            setCourse={setCourse}
+            addNewCourse={addNewCourse}
+            deleteCourse={deleteCourse}
+            updateCourse={updateCourse} />} />
+          <Route path="Courses/:courseId/*" element={<Courses courses={courses} />} />
+        </Routes>
       </div>
-    </Provider>
-  );
+    </div>
+  </Provider>
+);
 }
 export default Kanbas;
