@@ -5,7 +5,6 @@ const initialState = {
   module: { name: "New Module 123", description: "New Description" },
 };
 
-
 const modulesSlice = createSlice({
   name: "modules",
   initialState,
