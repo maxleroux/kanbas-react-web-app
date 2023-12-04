@@ -117,9 +117,6 @@ function UserTable() {
                 <button className="btn btn-warning me-2">
                   <BsPencil onClick={() => selectUser(user)} />
                 </button>
-                <button onClick={() => deleteUser(user)}>
-                  <BsTrash3Fill />
-                </button>
               </td>
             </tr>
           ))}
