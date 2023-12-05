@@ -25,6 +25,13 @@ function Nav() {
         SignIn
       </Link>
       <Link
+        to="/project/signup"
+        className="list-group-item list-group-item-action"
+        style={{margin: 0, padding: 5}}
+      >
+        SignUp
+      </Link>
+      <Link
         to="/project/users"
         className="list-group-item list-group-item-action"
         style={{margin: 0, padding: 5}}
