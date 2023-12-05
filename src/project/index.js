@@ -1,4 +1,5 @@
 import Signin from "../users/signin";
+import Signin from "../users/signup";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Nav from "./nav";
 import Account from "../users/account";
@@ -14,6 +15,7 @@ function Project() {
           <Route path="/admin/users" element={<UserTable />} />
           <Route path="/" element={<Navigate to="/project/home" />} />
           <Route path="/signin" element={<Signin />} />
+          <Route path="/signup" element={<SignUp />} />
           <Route path="/account" element={<Account />} />
           <Route path="/account/:id" element={<Account />} />
         </Routes>
